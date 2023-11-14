@@ -2,7 +2,7 @@
 ```shell
 docker build -t iyjian/science .
 
-docker run --rm -d -t \
+docker run --restart always -d -t \
 --name science \
 -p 1081:1080 \
 -v ~/.ssh/id_ed25519:/root/.ssh/id_ed25519:ro \
